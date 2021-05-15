@@ -1,8 +1,9 @@
-#This code is for full subtractor using 2 Half Subtractor
- ###########################################################
+//This code is for full subtractor using 2 Half Subtractor
+/////////////////////////////////////////////////////////// 
 
-#Design Code
-###############
+///////////////
+//Design Code//
+//////////////
  
 module half_subtractor(
 
@@ -32,11 +33,11 @@ half_subtractor u4(A, B, p, q);
 
 assign Bout=q|r;
 endmodule
+/////////////////////////////////////////////////////////////////////////////////
 
-################################################################
-
-# testbench.sv
-##############
+////////////////
+//testbench.sv//
+////////////////
 module full_subtractor_tb();
 wire x;
 reg A, B, C;
@@ -65,5 +66,5 @@ always #10 C=~C;
 
 endmodule
 
-
+//////////////////////////////////////////////////////////////////////////////////
 
