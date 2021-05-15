@@ -1,3 +1,10 @@
+//This code is for 4 bit asynchronous up counter
+/////////////////////////////////////////////////////////// 
+
+///////////////
+//Design Code//
+//////////////
+
 module asyncup(output reg[3:0] count,input clk,rst);
   always@(posedge rst)
     count=15;
@@ -11,7 +18,9 @@ module asyncup(output reg[3:0] count,input clk,rst);
    count[3]=~count[3];
 endmodule
 ////////////////////////////////////////////////////////////////
-
+////////////////
+//testbench.sv//
+////////////////
 module asyncup_tb();
   reg clk,rst;
   wire[3:0] count;
@@ -26,5 +35,5 @@ module asyncup_tb();
   end
   always #5 clk=~clk;
 endmodule
-
+///////////////////////////////////////////////////////////////////
 
