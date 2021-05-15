@@ -1,3 +1,9 @@
+//This code converts SR Flip Flop to JK Flip Flop
+/////////////////////////////////////////////////////////// 
+
+///////////////
+//Design Code//
+///////////////
 module srff(output reg q, qbar, input s,r,clk,rst);
 always @(negedge clk)
 begin
@@ -22,6 +28,9 @@ module jkff(inout q,qbar,input j,k,clk,rst);
 endmodule
 //////////////////////////////////////////////////////////////////////
 
+////////////////
+//testbench.sv//
+////////////////
 module jkff_tb;
 reg j,k,clk,rst;
 wire q,qbar;
