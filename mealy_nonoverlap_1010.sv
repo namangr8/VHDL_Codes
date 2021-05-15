@@ -1,5 +1,8 @@
-# Design Code
-#######################
+// This code detets the 1010 sequence in nonoverlap method
+//////////////////////////////////////////////////////////
+///////////////
+//Design Code//
+///////////////
 
 module mealy_nonoverlap(output reg Y,input A,clk,rst);
   reg[1:0]cst,nst;
@@ -28,10 +31,11 @@ module mealy_nonoverlap(output reg Y,input A,clk,rst);
     end 
 endmodule
 
-####################################################################
+//////////////////////////////////////////////////////////////
 
-# Testbench Code
-#####################
+//////////////////
+//Testbench Code//
+//////////////////
 module mealy_nonoverlap_tb;
   reg A,clk,rst;
   wire Y;
@@ -51,4 +55,4 @@ module mealy_nonoverlap_tb;
   always #10 A=~A;
     always #5 clk=~clk;
 endmodule
-####################################################################
+////////////////////////////////////////////////////////////////
