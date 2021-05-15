@@ -1,4 +1,4 @@
-// This code will detect the sequence 1010 in non-overlap sequence
+// This code will detect the sequence 1010 in overlap sequence
 //////////////////////////////////////////////////////////////////
 
 /////////////
