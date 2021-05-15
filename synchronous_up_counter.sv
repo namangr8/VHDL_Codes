@@ -1,3 +1,9 @@
+//This code is for 4 bit synchronous uo counter
+/////////////////////////////////////////////////////////// 
+
+///////////////
+//Design Code//
+///////////////
 module syncup(output reg[3:0] count,input clk,rst);
   always@(posedge clk or posedge rst)
     begin
@@ -11,6 +17,9 @@ module syncup(output reg[3:0] count,input clk,rst);
 endmodule
 
 /////////////////////////////////////////////////////////////////
+////////////////
+//testbench.sv//
+////////////////
 
 module syncup_tb();
   reg clk,rst;
