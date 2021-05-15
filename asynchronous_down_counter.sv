@@ -1,3 +1,9 @@
+//This code is for 4 bit asynchronous down counter
+/////////////////////////////////////////////////////////// 
+
+///////////////
+//Design Code//
+//////////////
 module asyncdown(output reg[3:0] count,input clk,rst);
   always@(posedge rst)
     count=0;
@@ -12,7 +18,9 @@ module asyncdown(output reg[3:0] count,input clk,rst);
 endmodule
 
 ////////////////////////////////////////////////////////////////////////
-
+////////////////
+//testbench.sv//
+////////////////
 module asyncdown_tb();
   reg clk,rst;
   wire[3:0] count;
@@ -27,3 +35,5 @@ module asyncdown_tb();
   end
   always #5 clk=~clk;
 endmodule
+
+///////////////////////////////////////////////////////////////////////////
