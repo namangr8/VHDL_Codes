@@ -19,8 +19,3 @@
 7. Select the required Signals to plot.
 _________
 
-# Table of Content
-
-|S.No|Circut Design|Design File Name|Testbench File Name|Link|
------------------------------
-|1|Sequence Detector Mealy Non_Overlap |mealy_nonoverlap_tb|mealy_nonoverlap|code|
