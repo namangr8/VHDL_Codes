@@ -1,3 +1,9 @@
+//This code is for 4 bit synchronous down counter
+/////////////////////////////////////////////////////////// 
+
+///////////////
+//Design Code//
+///////////////
 module syncdown(output reg[3:0] count,input clk,rst);
   always@(posedge clk or posedge rst)
     begin
@@ -12,6 +18,9 @@ endmodule
 
 /////////////////////////////////////////////////////////////////////////
 
+////////////////
+//testbench.sv//
+////////////////
 module syncdown_tb();
   reg clk,rst;
   wire[3:0] count;
